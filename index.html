@@ -1,42 +1,27 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Тестовый сайт</title>
-
-  <!-- Настройки (необязательно) -->
-<script>
-  window.COOKIE_CONSENT_CONFIG = {
-    policyUrl: './privacy.html',   // ссылка на вашу политику/соглашение
-    position: 'bottom',            // 'top' | 'bottom'
-    theme: 'light',                // 'light' | 'dark'
-    texts: {
-      message: 'Мы используем cookie для аналитики и улучшения сервиса.',
-      more: 'Подробнее',
-      accept: 'Согласиться',
-      decline: 'Отказаться'
-    }
-  };
-</script>
-
-<!-- Подключение скрипта (укажите корректный путь) -->
-<script src="./consent.js" defer></script>
-
-
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bltz.blog - Best iOS Apps Reviewed</title>
+    <meta name="description" content="Discover the best iOS apps for productivity, design, VPN, and everyday use. Expert reviews and honest recommendations.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Amplitude Analytics (optional - can be removed for development) -->
+    <script src="https://cdn.amplitude.com/libs/analytics-browser-2.11.1-min.js.gz"></script>
+    <script src="https://cdn.amplitude.com/libs/plugin-session-replay-browser-1.25.0-min.js.gz"></script>
+    <script>window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));window.amplitude.init('eb6782fc0bc08bc16c8702c5aaf48873', {"autocapture":{"elementInteractions":true}});</script>
+  <script type="module" crossorigin src="/assets/index-Dcbd7izG.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-B-WLEHd0.css">
 </head>
 <body>
-  <h1>Добро пожаловать на тестовый сайт!</h1>
-  <button type="button">Отправить заявку</button>
-  <form onsubmit="sendFormGoal(); return false;">
-    <input type="text" name="name" placeholder="Ваше имя" required>
-    <input type="submit" value="Отправить">
-  </form>
-  <button type="button">Final button</button>
-  <script>
-    function sendFormGoal() {
-      alert('Форма отправлена!');
-    }
-  </script>
+    <!-- React root element -->
+    <div id="root"></div>
+    
+    <!-- Vite injects the script here -->
 </body>
 </html>
